@@ -1,6 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <title> Patient Portal </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
 
+    <body>
+        <div id="full-page">
+            <div id="navbar">
+                <div id="medilib-title">
+                    <p> Medilib </p>
+                </div>
+
+                <div id="dashboard-title">
+                    <p> Dashboard </p>
+                </div>
+
+                <div id="profile-button">
+                    <button> Profile </button>
+                </div>
+
+                <div id="logs-button">
+                    <button> See Logs </button>
+                </div>
+
+                <div id="sign-out-button">
+                    <button> Sign Out </button>
+                </div>
+            </div>
+
+            <div id="dashboard">
+                <div id="left-bar">
+                    <div id="request-share">
+                        <button> Request docs </button>
+                        <button> Share docs </button>
+                    </div>
+
+                    <div id="offices">
+                        <p> Offices </p>
+                    </div>
+
+                    <div id="doctors">
+                        <p> Doctors </p>
+                    </div>
+
+                    <div id="highlights">
+                        <p> Highlights </p>
+                    </div>
+
+                    <button id="back-button" onclick="goEntry()"> Back to entry </button>
+                </div>
+
+                <div id="main">
+                    <button id="upload-button" onclick="displayUpload()"> Upload documents </button>
+                    <p> Text </p>
+
+                    <form action="#">
+                        <input type="file" id="new-file" name="new-file">
+                        <input type="radio" id="visible" name="visibility" value="visible">
+                        <label for="visible"> Visible </label>
+                        <input type="radio" id="hidden" name="visibility" value="hidden">
+                        <label for="hidden"> Hidden </label>
+
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>

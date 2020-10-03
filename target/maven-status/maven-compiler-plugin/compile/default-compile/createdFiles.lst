@@ -1,1 +1,3 @@
-com\medilib\myapp\HelloAppEngine.class
+com/medilib/myapp/DoctorServlet.class
+com/medilib/myapp/EntryServlet.class
+com/medilib/myapp/PatientServlet.class
