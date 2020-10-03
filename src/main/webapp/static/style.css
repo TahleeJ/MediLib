@@ -1,0 +1,57 @@
+div {
+    height: 20px;
+    width: 100px;
+    border-color: blue;
+    margin-right: 5vh;
+}
+
+p {
+    margin: 0;
+}
+
+#full-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard {
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+#left-bar {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 40vh;
+    margin-right: 10vh;
+}
+
+#request-share, #offices, #doctors, #highlights {
+    min-height: 10vh;
+    max-width: 40vh;
+}
+
+#main {
+    height: 90vh;
+    width: 50vh;
+}
+
+#request-share {
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+}

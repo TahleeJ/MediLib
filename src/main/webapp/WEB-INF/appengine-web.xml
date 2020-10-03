@@ -8,5 +8,9 @@
     <static-files>
         <include path="/**.html" >
         </include>
+        <include path="/**.js" >
+        </include>
+        <include path="/**.css" >
+        </include>
     </static-files>
 </appengine-web-app>
