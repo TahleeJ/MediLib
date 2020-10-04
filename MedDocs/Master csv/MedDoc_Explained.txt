@@ -1,0 +1,12 @@
+The end goal is to utilize Google Cloud Natural Lang API to
+analyze the uploaded medical documents, and highlight repeated symptoms
+and organize the reports in a more apporachable format between doctors.
+In addition, for those symptoms with constant occurances, the user would
+be prompted on some undetermined time basis to inquire if symptoms are
+presistent.
+
+The CSV files contained in the 'MedDocs' folder were generated from a
+massive CSV of medical record sample data from Kaggle.com. It was broken
+in parts for demonstration purposes to exist as sperate medical history
+reports from different offices/medical professionals. Since, of course,
+laws prohibit including actual medical record data for such use.
