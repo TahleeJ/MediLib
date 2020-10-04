@@ -30,13 +30,14 @@ p {
     display: flex;
     flex-direction: row;
     height: 90vh;
+    width: 100vh;
 }
 
 #left-bar {
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 40vh;
+    width: 15vh;
     margin-right: 10vh;
 }
 
@@ -47,11 +48,63 @@ p {
 
 #main {
     height: 90vh;
-    width: 50vh;
+    width: 85vh;
+    display: flex;
+    flex-direction: row;
 }
 
 #request-share {
     display: flex;
     flex-direction: column;
     height: 5vh;
+}
+
+#user-type, #temp-account {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vh;
+}
+
+#upload-box {
+    display: none;
+}
+
+#upload-button {
+    height: 5vh;
+}
+
+#files {
+    height: 90vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#fileBox {
+    display: flex;
+    flex-direction: row;
+    width: 50vh;
+    height: 5vh;
+}
+
+#hideFile {
+    background-color: orange;
+    color: white;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+#showFile {
+    background-color: green;
+    color: white;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+#deleteButton {
+    background-color: red;
+    color: white;
+    height: 5vh;
+    margin-bottom: 2vh;
 }

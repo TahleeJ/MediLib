@@ -6,7 +6,7 @@
         <script src="script.js"></script>
     </head>
 
-    <body>
+    <body onload="goPatient()">
         <div id="full-page">
             <div id="navbar">
                 <div id="medilib-title">
@@ -53,18 +53,20 @@
                 </div>
 
                 <div id="main">
-                    <button id="upload-button" onclick="displayUpload()"> Upload documents </button>
-                    <p> Text </p>
+                    <button id="upload-button" onclick="displayUpload()"> Remove/Upload documents </button>
+                    <div id="files"></div>
 
-                    <form action="#">
-                        <input type="file" id="new-file" name="new-file">
-                        <input type="radio" id="visible" name="visibility" value="visible">
-                        <label for="visible"> Visible </label>
-                        <input type="radio" id="hidden" name="visibility" value="hidden">
-                        <label for="hidden"> Hidden </label>
+                    <div id="upload-box">
+                        <form action="/patientportal?init=false"  method="POST" enctype="multipart/form-data">
+                            <input type="file" id="new-file" name="new-file">
+                            <input type="submit">
+                        </form>
+                    </div>
 
-                        <input type="submit">
-                    </form>
+                    <!-- <input type="radio" id="visible" name="visibility" value="visible">
+                            <label for="visible"> Show </label>
+                            <input type="radio" id="hidden" name="visibility" value="hidden">
+                            <label for="hidden"> Hide </label> -->
                 </div>
             </div>
 

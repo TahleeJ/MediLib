@@ -1,3 +1,4 @@
 com/medilib/myapp/DoctorServlet.class
-com/medilib/myapp/EntryServlet.class
 com/medilib/myapp/PatientServlet.class
+com/structures/VisualFile.class
+com/medilib/myapp/EntryServlet.class

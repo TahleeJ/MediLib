@@ -69,6 +69,32 @@ public class EntryServlet extends HttpServlet {
 
         // Use or store profile information
         // ...
+        /*
+           >(1)  organizations (all)
+
+                >(2) organization (individual)
+
+                    >(3) doctors (all for org)
+
+                        >(4) patients (all for doctor)
+
+                            >(5) visible docs
+
+                            >(5) hidden docs
+
+                    >(3) patients (all for org)
+
+                        >(4) visible docs
+
+                        >(4) hidden docs
+
+           >(1)  users (all)
+
+                >(2) patients(all)
+
+                >(2) doctors (all)
+        */
+        // If a new user, create a new user inside the main directory alongside the organizations
 
         String json = "{";
         json += "name: " + name;
