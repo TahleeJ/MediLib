@@ -3,24 +3,30 @@
     <head>
         <title> User Portal </title>
         <script src="script.js"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
         <link rel="stylesheet" href="style.css">
         <meta name="google-signin-client_id" content="101678558796-he7teotdh66mk6s4hrdea62u8e4lj8hk.apps.googleusercontent.com">
     </head>
 
     <body>
         <div id="user-type">
-            <form action="#">
-                <input type="radio" id="patient" name="user-type" value="patient">
-                <label for="patient"> I am a Patient </label>
-                <input type="radio" id="doctor" name="user-type" value="doctor">
-                <label for="doctor"> I am a Doctor </label>
-            </form>
+        <form>
+            <input type="radio" id="patient" name="user-type" value="patient" checked="true">
+            <label for="patient"> I am a Patient </label>
+            <input type="radio" id="doctor" name="user-type" value="doctor">
+            <label for="doctor"> I am a Doctor </label>
+        </form>
 
             <div class="g-signin2" data-onsuccess="onSignIn()"></div>
 
-            <!-- <button id="patient-button" onclick="goPatient()"> I am a Patient </button>
-            <button id="doctor-button" onclick="goDoctor()"> I am a Doctor </button> -->
+            <button id="patient-button" onclick="goPatient()"> I am a Patient </button>
+            <button id="doctor-button" onclick="goDoctor()"> I am a Doctor </button>
+        </div>
+
+        <div id="temp-account">
+            <input type="text" id="first-name" placeholder="First name"> 
+            <input type="text" id="last-name" placeholder="Last name">
+            <button id="submit" onclick="submitInfo()"> Submit </button>
         </div>
     </body>
 </html>
